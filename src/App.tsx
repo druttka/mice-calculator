@@ -48,7 +48,7 @@ function App() {
       <div className="instructions">Your target is {length} words.</div>
 
       <div className="instructions">
-        For more, enjoy this video from Brandon Sanderson's BYU lecture series, featuring Mary Robinette's description of MICE. 
+        For more, enjoy this video from Brandon Sanderson's BYU lecture series, featuring Mary Robinette Kowal's description of MICE. 
         <iframe className="instructions" width="560" height="315" src="https://www.youtube.com/embed/blehVIDyuXk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
       </div>
     </div>
