@@ -25,8 +25,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <span>MICE Calculator</span>
+          <span>MICE Calculator</span>
+        <div>
+          View it on <a href="https://www.github.com/druttka/mice-calculator" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
       </header>
 
       <div className="instructions">
@@ -48,7 +50,7 @@ function App() {
       <div className="instructions">Your target is {length} words.</div>
 
       <div className="instructions">
-        For more, enjoy this video from Brandon Sanderson's BYU lecture series, featuring Mary Robinette Kowal's description of MICE. 
+        <div>For more, enjoy this video from Brandon Sanderson's BYU lecture series, featuring Mary Robinette Kowal's description of MICE.</div> 
         <iframe className="instructions" width="560" height="315" src="https://www.youtube.com/embed/blehVIDyuXk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
       </div>
     </div>
