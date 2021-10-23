@@ -59,7 +59,7 @@ function App() {
           </a>
         </div>
         <div>
-          View it on{" "}
+          See it on{" "}
           <a
             href="https://www.github.com/druttka/mice-calculator"
             target="_blank"
