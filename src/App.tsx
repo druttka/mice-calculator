@@ -25,7 +25,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-          <span>MICE Calculator</span>
+          <span>MICE Gauge</span>
         <div>
           View it on <a href="https://www.github.com/druttka/mice-calculator" target="_blank" rel="noreferrer">GitHub</a>
         </div>
