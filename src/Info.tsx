@@ -13,7 +13,7 @@ export const Info: React.FC = () => {
         More characters and more settings also necessitate a longer story.
       </div>
       <div className="instructions">
-        Use the sliders below to adjust how many threads, characters, and
+        Use the sliders on the Gauge to adjust how many threads, characters, and
         settings you're considering, and see a rough estimate of a target story
         length.
       </div>
