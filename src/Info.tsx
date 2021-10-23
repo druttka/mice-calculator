@@ -40,15 +40,6 @@ export const Info: React.FC = () => {
         </li>
         <li>
           <a
-            href="https://www.youtube.com/playlist?list=PLSH_xM-KC3Zv-79sVZTTj-YA6IAqh8qeQ"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Brandon Sanderson's BYU lecture series
-          </a>
-        </li>
-        <li>
-          <a
             href="https://www.youtube.com/watch?v=blehVIDyuXk"
             target="_blank"
             rel="noreferrer"
@@ -56,11 +47,22 @@ export const Info: React.FC = () => {
             Mary Robinette Kowal's deep dive into MICE
           </a>
         </li>
+        <li>
+          <a
+            href="https://www.youtube.com/playlist?list=PLSH_xM-KC3Zv-79sVZTTj-YA6IAqh8qeQ"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Brandon Sanderson's BYU lecture series
+          </a>
+        </li>
       </ul>
-      <div className="instructions Info-disclaimer">
+
+      <div className="instructions">
         MICE Gauge has no relationship to Brandon Sanderson, Mary Robinette
-        Kowal, or Writing Excuses. Just a fun utility, as I've found the
-        equation helpful.
+        Kowal, or Writing Excuses. I've simply found the MICE Quotient very helpful,
+        and I find that watching the numbers change while I move sliders around
+        gets me where I want to go more quickly.
       </div>
     </div>
   );
