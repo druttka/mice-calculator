@@ -2,7 +2,9 @@
 
 In [this lecture and workshop from Mary Robinette Kowal](https://www.youtube.com/watch?v=blehVIDyuXk), we learn an interesting equation for target story length based on the number of characters, settings, and "MICE" threads.  
 
-This quick progressive web app provides sliders for these factors and estimates a target story length. The immediate goal was functionality. Visuals and polish may or may not come soon =)
+This quick progressive web app provides sliders for these factors and estimates a target story length.
+
+![Screenshot of the MICE Gauge](./misc/screenshot.png)
 
 ## Use it today
 
