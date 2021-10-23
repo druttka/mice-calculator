@@ -28,9 +28,9 @@ const Slider: React.FC<SliderProps> = ({ label, setValue, value }) => {
 export const Gauge: React.FC = () => {
   const [miceThreads, setMiceThreads] = useState(2);
   const [characters, setCharacters] = useState(2);
-  const [settings, setSettings] = useState(1);
+  const [stages, setStages] = useState(1);
 
-  const length = ((characters + settings) * 750 * miceThreads) / 1.5;
+  const length = ((characters + stages) * 750 * miceThreads) / 1.5;
 
   return (
     <div>
@@ -44,7 +44,7 @@ export const Gauge: React.FC = () => {
         setValue={setCharacters}
         value={characters}
       />
-      <Slider label={"Settings"} setValue={setSettings} value={settings} />
+      <Slider label={"Stages"} setValue={setStages} value={stages} />
 
       <div className="Gauge-result">Your target is {length} words.</div>
 

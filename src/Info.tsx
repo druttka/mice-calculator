@@ -10,18 +10,19 @@ export const Info: React.FC = () => {
       </div>
       <div className="instructions">
         The more of those these threads we open, the longer the story becomes.
-        More characters and more settings also necessitate a longer story.
+        More characters and more stages (as in where actors stand, not as in phases)
+        also necessitate a longer story.
       </div>
       <div className="instructions">
         Use the sliders on the Gauge to adjust how many threads, characters, and
-        settings you're considering, and see a rough estimate of a target story
+        stages you're considering, and see a rough estimate of a target story
         length.
       </div>
       <div className="instructions">
         The equation is <span className="Info-equation">(C + S) * M / 750</span>
         , where{" "}
         <span className="Info-equation">
-          C=Characters, S=Settings, M=MICE threads.
+          C=Characters, S=Stages, M=MICE threads.
         </span>
       </div>
       
