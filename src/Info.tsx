@@ -19,7 +19,7 @@ export const Info: React.FC = () => {
         length.
       </div>
       <div className="instructions">
-        The equation is <span className="Info-equation">(C + S) * M / 750</span>
+        The equation is <span className="Info-equation">(C + S) * M * 750 / 1.5</span>
         , where{" "}
         <span className="Info-equation">
           C=Characters, S=Stages, M=MICE threads.
