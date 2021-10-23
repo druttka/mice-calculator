@@ -25,7 +25,7 @@ html, body, #root, .App {
   padding: 5px 10px;
   height: 10vmin;
 
-  background-color: #282c34;
+  background-color: #4d3e3d;
   color: white;
   font-size: calc(10px + 2vmin);
 }
@@ -42,13 +42,26 @@ html, body, #root, .App {
 
   height: calc(24px + 10vmin);
   
-  background-color: #7c889f;
+  background-color: #d6d9e3;
   color: white;
   font-size: calc(24px + 1vmin);
 }
 
 .App-button {
   flex: 1;
+  height: 100%;
+  border: none;
+
+  align-self: center;
+  
+  color: #4d3e3d;
+  background-color: #c7ab87;
+
+  font-size: calc(18px + 2vmin);
+}
+
+.App-button-active {
+  font-weight: bold;
 }
 
 .App-footer {
@@ -60,7 +73,7 @@ html, body, #root, .App {
   padding: 0 10px 10vmin 10px;
   height: calc(10px + 3vmin);
   
-  background-color: #282c34;
+  background-color: #4d3e3d;
   color: white;
   font-size: calc(10px + 1vmin);
 }
@@ -70,6 +83,52 @@ html, body, #root, .App {
   color: white;
 }
 
+.Slider-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 5px;
+
+  margin-top: 50px;
+  font-weight: bold;
+  overflow: hidden;
+  font-size: 24px;
+}
+
+.Slider-label {
+  flex: 1;
+  text-align: left;
+}
+
+.Slider-input {
+  flex: 1;
+}
+
+.Gauge-result {
+  margin-top: 50px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.Info-equation {
+  font-style: italic;
+  font-weight: bold;
+}
+
 .instructions {
   margin-top: 10px;
+  padding: 0 10px;
+  text-align: left;
+}
+
+.Info-disclaimer {
+  font-style: italic;
+  font-size: 10px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.Info-resources {
+  text-align: left;
+  list-style: disc;
 }
