@@ -48,25 +48,31 @@ function App() {
       </div>
 
       <div className="App-footer">
-        <div>
-          Created by{" "}
-          <a
-            href="https://www.davidruttka.com"
-            target="_blank"
-            rel="noreferrer"
-          >
-            David Ruttka
-          </a>
+        <div className="App-footer-links">
+          <div>
+            Created by{" "}
+            <a
+              href="https://www.davidruttka.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              David Ruttka
+            </a>
+          </div>
+          <div>
+            See it on{" "}
+            <a
+              href="https://www.github.com/druttka/mice-calculator"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
+          </div>
         </div>
-        <div>
-          See it on{" "}
-          <a
-            href="https://www.github.com/druttka/mice-calculator"
-            target="_blank"
-            rel="noreferrer"
-          >
-            GitHub
-          </a>
+        <div className="App-footer-install-hint">
+          Consider using "Add to Home Screen" to install this free application
+          instead of bookmarking the site in your browser!
         </div>
       </div>
     </div>

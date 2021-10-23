@@ -47,6 +47,7 @@ export const Gauge: React.FC = () => {
       <Slider label={"Settings"} setValue={setSettings} value={settings} />
 
       <div className="Gauge-result">Your target is {length} words.</div>
+
     </div>
   );
 };
