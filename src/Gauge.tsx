@@ -1,4 +1,5 @@
 import React, { Dispatch, SetStateAction, useState } from 'react';
+import { BeatChart } from './BeatChart';
 
 interface SliderProps {
   setValue: Dispatch<SetStateAction<number>>;
@@ -34,6 +35,9 @@ export const Gauge: React.FC = () => {
 
   return (
     <div>
+            <div className="Gauge-result">Your target is {length} words.</div>
+      <div className="Info-equation">({characters} + {stages}) * {miceThreads} * 750 / 1.5</div>
+
       <Slider
         label={"MICE"}
         setValue={setMiceThreads}
@@ -46,9 +50,7 @@ export const Gauge: React.FC = () => {
       />
       <Slider label={"Stages"} setValue={setStages} value={stages} />
 
-      <div className="Gauge-result">Your target is {length} words.</div>
-      <div className="Info-equation">({characters} + {stages}) * {miceThreads} * 750 / 1.5</div>
-
+      <BeatChart length={length} countType="Word" />
     </div>
   );
 };
