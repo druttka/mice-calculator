@@ -4,30 +4,10 @@ export const Info: React.FC = () => {
   return (
     <div>
       <div className="instructions">
-        Story threads which seek to resolve problems on milleu, inquiry,
-        character development, or events contribute to the target length of the
-        story.
-      </div>
-      <div className="instructions">
-        The more of those these threads we open, the longer the story becomes.
-        More characters and more stages (as in where actors stand, not as in phases)
-        also necessitate a longer story.
-      </div>
-      <div className="instructions">
-        Use the sliders on the Gauge to adjust how many threads, characters, and
-        stages you're considering, and see a rough estimate of a target story
-        length.
-      </div>
-      <div className="instructions">
-        The equation is <span className="Info-equation">(C + S) * M * 750 / 1.5</span>
-        , where{" "}
-        <span className="Info-equation">
-          C=Characters, S=Stages, M=MICE threads.
-        </span>
+        This tool was inspired by, but is entirely unaffiliated with, the
+        following:
       </div>
       
-      <div className="instructions">For more, checkout</div>
-
       <ul className="Info-resources">
         <li>
           <a
@@ -56,13 +36,34 @@ export const Info: React.FC = () => {
             Brandon Sanderson's BYU lecture series
           </a>
         </li>
+        <li>
+          <a
+            href="https://www.amazon.com/Save-Last-Book-Screenwriting-Youll/dp/1932907009"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Save The Cat! The Last Book on Screenwriting You'll Ever Need{" "}
+          </a>
+        </li>
       </ul>
 
       <div className="instructions">
-        MICE Gauge has no relationship to Brandon Sanderson, Mary Robinette
-        Kowal, or Writing Excuses. I've simply found the MICE Quotient very helpful,
-        and I find that watching the numbers change while I move sliders around
-        gets me where I want to go more quickly.
+        I've found the MICE Quotient and beat charts very helpful in planning my
+        stories, and I feel that having a bespoke calculator for these methods
+        saves me a lot of time.
+      </div>
+
+      <div className="instructions">
+        You can review known issues, report problems, and request enhancements
+        at the{" "}
+        <a
+          href="https://github.com/druttka/mice-calculator/issues"
+          target="_blank"
+          rel="noreferrer"
+        >
+          project site on GitHub
+        </a>
+        . Thanks for using MICE Gauge!
       </div>
     </div>
   );
