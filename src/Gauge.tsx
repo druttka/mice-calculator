@@ -35,8 +35,8 @@ export const Gauge: React.FC = () => {
 
   return (
     <div>
-            <div className="Gauge-result">Your target is {length} words.</div>
-      <div className="Info-equation">({characters} + {stages}) * {miceThreads} * 750 / 1.5</div>
+  
+      <h2>MICE Quotient</h2>
 
       <Slider
         label={"MICE"}
@@ -49,6 +49,11 @@ export const Gauge: React.FC = () => {
         value={characters}
       />
       <Slider label={"Stages"} setValue={setStages} value={stages} />
+
+      <div className="Info-equation">({characters} + {stages}) * {miceThreads} * 750 / 1.5</div>
+      <div className="Gauge-result">Your target is {length} words.</div>
+
+      <div className="Gauge-separator" />
 
       <BeatChart length={length} countType="Word" />
     </div>
