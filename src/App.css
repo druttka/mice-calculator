@@ -1,4 +1,7 @@
-html, body, #root, .App {
+html,
+body,
+#root,
+.App {
   height: 100vh;
 }
 
@@ -13,7 +16,6 @@ html, body, #root, .App {
   pointer-events: none;
   margin-right: 10px;
 }
-
 
 .App-header {
   display: flex;
@@ -31,7 +33,7 @@ html, body, #root, .App {
 
 .App-main {
   flex: 1;
-  background-color: #FFF9DB;
+  background-color: #fff9db;
   overflow: scroll;
 }
 
@@ -41,7 +43,7 @@ html, body, #root, .App {
   align-items: center;
 
   height: calc(24px + 15vmin);
-  
+
   background-color: #c7ab87;
   color: white;
   font-size: calc(24px + 1vmin);
@@ -53,7 +55,7 @@ html, body, #root, .App {
   border: none;
 
   align-self: center;
-  
+
   color: #4d3e3d;
   background-color: #c7ab87;
 
@@ -69,7 +71,7 @@ html, body, #root, .App {
   flex-direction: column;
   justify-content: flex-start;
   height: calc(10px + 5vmin);
-  
+
   padding: 5px;
 
   background-color: #4d3e3d;
@@ -178,7 +180,8 @@ html, body, #root, .App {
 }
 
 .BeatChart-beat-list {
-  margin-top: 10px;
+  width: 100%;
+  margin: auto;
 }
 
 a {
@@ -189,12 +192,28 @@ a:hover {
   text-decoration: underline;
 }
 
-input, select {
+input,
+select {
   font-size: 18px;
 }
 
 @media all and (display-mode: standalone) {
   .App-footer {
     display: none;
+  }
+}
+
+@media all and (min-height: 768px) {
+  .App-buttons {
+    height: calc(14px + 5vmin);
+    font-size: calc(14px + 1vmin);
+  }
+
+  .App-button {
+    font-size: calc(12px + 2vmin);
+  }
+
+  td {
+    font-size: 24px;
   }
 }
