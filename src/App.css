@@ -189,6 +189,10 @@ a:hover {
   text-decoration: underline;
 }
 
+input, select {
+  font-size: 18px;
+}
+
 @media all and (display-mode: standalone) {
   .App-footer {
     display: none;
