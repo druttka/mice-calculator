@@ -1,12 +1,15 @@
-import React, { Dispatch, SetStateAction, useState } from "react";
+import React, { useState } from "react";
 import "./App.css";
+import { BeatChart } from "./BeatChart";
 import { Gauge } from "./Gauge";
 import { Info } from "./Info";
 
 function App() {
-  const [view, setView] = useState<"gauge" | "info">("gauge");
+  const [view, setView] = useState<"gauge" | "info" | 'beats'>("gauge");
+  const [words, setWords] = useState(1500);
 
   const isGaugeActive = view === "gauge";
+  const isBeatsActive = view === "beats";
   const isInfoActive = view === "info";
   const getButtonClassName = (active: boolean) => {
     return ["App-button", active ? "App-button-active" : ""].join(" ");
@@ -29,6 +32,7 @@ function App() {
 
       <div className={"App-main"}>
         {isGaugeActive && <Gauge />}
+        {isBeatsActive && <BeatChart />}
         {isInfoActive && <Info />}
       </div>
 
@@ -38,6 +42,12 @@ function App() {
           onClick={() => setView("gauge")}
         >
           Gauge
+        </button>
+        <button
+          className={getButtonClassName(isBeatsActive)}
+          onClick={() => setView("beats")}
+        >
+          Beats
         </button>
         <button
           className={getButtonClassName(isInfoActive)}

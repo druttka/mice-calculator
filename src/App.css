@@ -143,16 +143,30 @@ html, body, #root, .App {
   list-style: disc;
 }
 
-.BeatChart-learn-more {
-  margin-top: 0;
-}
-
 .BeatChart-method-name {
   margin-bottom: 0;
 }
 
-.Gauge-separator {
-  margin: 20px 20px;
+.BeatChart-learn-more {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.BeatChart-options-container {
+  text-align: left;
+  padding: 0 20px;
+}
+
+.BeatChart-option-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.BeatChart-separator {
+  margin: 10px 20px;
   border-bottom: 1px dashed black;
 }
 
@@ -160,7 +174,11 @@ html, body, #root, .App {
   font-size: 12px;
   text-align: justify;
   font-style: italic;
-  margin: 0 20px;
+  margin: 5px 20px;
+}
+
+.BeatChart-beat-list {
+  margin-top: 10px;
 }
 
 a {

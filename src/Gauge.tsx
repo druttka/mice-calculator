@@ -53,9 +53,6 @@ export const Gauge: React.FC = () => {
       <div className="Info-equation">({characters} + {stages}) * {miceThreads} * 750 / 1.5</div>
       <div className="Gauge-result">Your target is {length} words.</div>
 
-      <div className="Gauge-separator" />
-
-      <BeatChart length={length} countType="Word" />
     </div>
   );
 };
