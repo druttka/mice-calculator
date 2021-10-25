@@ -217,3 +217,31 @@ select {
     font-size: 24px;
   }
 }
+
+@media all and (min-width: 400px) {
+  .App-buttons {
+    height: calc(14px + 5vmin);
+    font-size: calc(14px + 1vmin);
+  }
+
+  .App-button {
+    font-size: calc(12px + 2vmin);
+  }
+
+  td {
+    font-size: 24px;
+  }
+
+  .BeatChart-option-container {
+    justify-content: center;
+  }
+
+  .BeatChart-option-container > label {
+    margin-right: 20px;
+  }
+
+  
+  .BeatChart-option-container > label::after {
+    content: ":";
+  }
+}

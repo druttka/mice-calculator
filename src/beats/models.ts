@@ -9,7 +9,7 @@ export interface Beat {
 
 export interface BeatBreakdown {
     displayName: string;
-    infoLinkTitle: string;
-    infoLinkUrl: string;
+    infoLinkTitle?: string;
+    infoLinkUrl?: string;
     beats: Beat[];
 }

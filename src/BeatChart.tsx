@@ -50,16 +50,32 @@ export const BeatChart: React.FC = () => {
   const [length, setLength] = useState(3000);
   const [countType, setCountType] = useState<LengthType>("Word");
 
-  const [methodIndex] = useState(0);
+  const [methodIndex, setMethodIndex] = useState(0);
   const selectedMethod = AvailableBeatBreakdowns[methodIndex];
 
   return (
     <div className="BeatChart-container">
       <h2 className="BeatChart-heading">Beat Chart</h2>
 
-      <h3 className="BeatChart-method-name">
-        Using {selectedMethod.displayName}
-      </h3>
+
+      <div className="BeatChart-options-container">
+        <div className="BeatChart-option-container">
+          <label htmlFor="beat-chart-breakdown">Beat Chart</label>
+          <select
+            id="beat-chart-breakdown"
+            onChange={(e) => {
+              setMethodIndex(e.target.selectedIndex);
+            }}
+          >
+            {
+              AvailableBeatBreakdowns.map((b,i) => (
+                <option key={`beat-chart-method-${i}`} selected={i===methodIndex} value={b.displayName.replaceAll(' ', '-')}>{b.displayName}</option>
+              ))
+            }
+          </select>
+        </div>
+      </div>
+
       {selectedMethod.infoLinkUrl && (
         <h4 className="BeatChart-learn-more">
           Learn more at{" "}
@@ -68,7 +84,6 @@ export const BeatChart: React.FC = () => {
           </a>
         </h4>
       )}
-
 
       <div className="BeatChart-support">
         Research and support for additional methods is underway! To request
@@ -116,7 +131,7 @@ export const BeatChart: React.FC = () => {
         </div>
       </div>
 
-    <div className="BeatChart-separator"></div>
+      <div className="BeatChart-separator"></div>
 
       <table className="BeatChart-beat-list">
         <tr>
