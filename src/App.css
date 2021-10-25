@@ -155,16 +155,25 @@ body,
 }
 
 .BeatChart-options-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 100%;
+
   text-align: left;
   padding: 0 20px;
 }
 
 .BeatChart-option-container {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 10px;
+}
+
+.BeatChart-option-container > label{
+  margin-right: 10px;
 }
 
 .BeatChart-separator {
@@ -203,7 +212,7 @@ select {
   }
 }
 
-@media all and (min-height: 768px) {
+@media all and (min-height: 700px) {
   .App-buttons {
     height: calc(14px + 5vmin);
     font-size: calc(14px + 1vmin);
@@ -218,30 +227,12 @@ select {
   }
 }
 
-@media all and (min-width: 400px) {
-  .App-buttons {
-    height: calc(14px + 5vmin);
-    font-size: calc(14px + 1vmin);
+@media all and (max-width: 400px) {
+  .BeatChart-options-container {
+    flex-direction: column;
   }
 
-  .App-button {
-    font-size: calc(12px + 2vmin);
-  }
-
-  td {
-    font-size: 24px;
-  }
-
-  .BeatChart-option-container {
-    justify-content: center;
-  }
-
-  .BeatChart-option-container > label {
-    margin-right: 20px;
-  }
-
-  
-  .BeatChart-option-container > label::after {
-    content: ":";
+ #beat-chart-breakdown  {
+   max-width: 300px;
   }
 }

@@ -55,23 +55,29 @@ export const BeatChart: React.FC = () => {
 
   return (
     <div className="BeatChart-container">
-      <h2 className="BeatChart-heading">Beat Chart</h2>
-
-
       <div className="BeatChart-options-container">
         <div className="BeatChart-option-container">
-          <label htmlFor="beat-chart-breakdown">Beat Chart</label>
+            <label
+              className="BeatChart-breakdown-label"
+              htmlFor="beat-chart-breakdown"
+            >
+              Beat Chart
+            </label>
           <select
             id="beat-chart-breakdown"
             onChange={(e) => {
               setMethodIndex(e.target.selectedIndex);
             }}
           >
-            {
-              AvailableBeatBreakdowns.map((b,i) => (
-                <option key={`beat-chart-method-${i}`} selected={i===methodIndex} value={b.displayName.replaceAll(' ', '-')}>{b.displayName}</option>
-              ))
-            }
+            {AvailableBeatBreakdowns.map((b, i) => (
+              <option
+                key={`beat-chart-method-${i}`}
+                selected={i === methodIndex}
+                value={b.displayName.replaceAll(" ", "-")}
+              >
+                {b.displayName}
+              </option>
+            ))}
           </select>
         </div>
       </div>
@@ -85,19 +91,7 @@ export const BeatChart: React.FC = () => {
         </h4>
       )}
 
-      <div className="BeatChart-support">
-        Research and support for additional methods is underway! To request
-        specific beat breakdowns, visualizations, or other new features check us
-        out on{" "}
-        <a
-          href="https://www.github.com/druttka/mice-calculator"
-          target="_blank"
-          rel="noreferrer"
-        >
-          GitHub
-        </a>{" "}
-        and consider supporting our efforts from the Info screen.
-      </div>
+
 
       <div className="BeatChart-options-container">
         <div className="BeatChart-option-container">
@@ -131,6 +125,19 @@ export const BeatChart: React.FC = () => {
         </div>
       </div>
 
+      <div className="BeatChart-support">
+        Research and support for additional methods is underway! To request
+        specific beat breakdowns, visualizations, or other new features check us
+        out on{" "}
+        <a
+          href="https://www.github.com/druttka/mice-calculator"
+          target="_blank"
+          rel="noreferrer"
+        >
+          GitHub
+        </a>{" "}
+        and consider supporting our efforts from the Info screen.
+      </div>
       <div className="BeatChart-separator"></div>
 
       <table className="BeatChart-beat-list">
